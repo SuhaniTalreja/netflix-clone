@@ -1,0 +1,126 @@
+.profile{
+    height: 100vh;
+    color: white;
+}
+
+.profile_body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+
+    @media(max-width:880px){
+        width: 80%;
+        padding-top: 20%;
+    }
+}
+
+.profile_info{
+    display: flex;
+    @media (max-width: 880px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.profile_info > img{
+    height: 90px;
+    @media (max-width: 880px){
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+.profile_body >h1{
+    font-size: 40px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+    @media (max-width:880px) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.profile_details{
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+
+    @media (max-width:880px) {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.profile_details >h2{
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.profile_signout{
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile_plans >h3{
+    border-bottom: #282c2d 1px solid;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.plan{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    @media(max-width:880px){
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.plan > button{
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: auto;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-weight: 600;
+
+    @media(max-width:880px){
+        width: 80%;
+        margin-top: 10px;
+    }
+    
+}
+
+.subscribe{
+    background-color: #e50914;
+}
+
+.current{
+    background-color: gray;
+}
+
+.plan > h5{
+    color: gray;
+    font-weight: 450;
+    font-size: 1rem;
+}
+

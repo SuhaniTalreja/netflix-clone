@@ -1,0 +1,113 @@
+.loginscreen{
+    position: relative;
+    height: 100%;
+    background:url("https://miro.medium.com/v2/resize:fit:1100/format:webp/1*5lyavS59mazOFnb55Z6znQ.png") 
+    center no-repeat;
+    background-size: cover;
+}
+
+.login_gradient{
+    width:100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.7) 0,
+        rgba(0,0,0,0) 60%,
+        rgba(0,0,0,0.7) 100%
+    );
+}
+
+.login_logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.login_button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    border: none;
+}
+
+.login_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    right: 0;
+}
+
+
+.login_body > h1{
+    font-size: 2.125rem;
+    margin-bottom: 20px;
+    @media (max-width: 800px) {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+.login_body > h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    @media (max-width: 800px) {
+        font-size: 1rem;
+    }
+}
+.login_body > h3{
+    font-size: 1rem;
+    font-weight: 350;
+    @media (max-width: 800px) {
+        font-size: 0.9rem;
+    }
+}
+
+.login_input > form{
+    @media(max-width:800px){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.login_input > form > input{
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+    @media(max-width:800px){
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.login_input{
+    margin: 20px;
+}
+.login_getStarted{
+    padding: 16px 19px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    @media(max-width:800px){
+        width: 100%;
+    }
+}
