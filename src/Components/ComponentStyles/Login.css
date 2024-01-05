@@ -49,6 +49,10 @@
     color: white;
     padding: 20px;
     right: 0;
+    @media (max-width:600px) {
+        top: 50%;
+        width: fit-content;
+    }
 }
 
 
@@ -66,6 +70,7 @@
     margin-bottom: 30px;
     @media (max-width: 800px) {
         font-size: 1rem;
+
     }
 }
 .login_body > h3{
